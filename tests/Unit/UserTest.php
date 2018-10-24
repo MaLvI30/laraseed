@@ -36,6 +36,11 @@ class UserTest extends TestCase
 
     }
 
+    public function testContain()
+    {
+
+        $this->assertContainsOnly('string',['2']);
+    }
 
 
 
