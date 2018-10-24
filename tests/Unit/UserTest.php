@@ -25,5 +25,19 @@ class UserTest extends TestCase
         $user = User::inRandomOrder()->first();
         $this->assertInstanceOf('App\User',$user);
     }
+
+
+
+        public function testAttribute()
+    {
+
+        $this->assertClassHasAttribute('fillable','App\User');
+
+
+    }
+
+
+
+
 }
 
